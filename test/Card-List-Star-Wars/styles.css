@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'STAR WARS FONT';
+  font-style: normal;
+  font-weight: normal;
+  src: local('STAR WARS FONT'), url('./Starjedi.ttf') format('truetype');
+}
+
+body {
+  font-family: 'STAR WARS FONT';
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(13, 0, 59));
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 150px;
+  color: white;
+  font-size: 25px;
+}
+
+#container p {
+  margin: 20px 0;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.box {
+  width: 230px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  background: #FFD700;
+  border-radius: 10px;
+
+  margin: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.poster {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#div h2 {
+  font-size: 20px;
+}
+
+.poster > div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.poster div > p {
+  font-size: 15px;
+}
